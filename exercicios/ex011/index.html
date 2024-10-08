@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferente ou simplesmente diminua o tamanho do nevagdor</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexiva">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="midia/feelingfab.mp3.mp3" type="audio/mpeg">
+        <source src="midia/feelingfab.mp3.ogg" type="audio/ogg">
+        <source src="midia/feelingfab.mp3.wav" type="audio/wav">
+        <p>infelizmente seu navegador n consegue reproduzir audio. <a href="midia/feelingfab.mp3.mp3">clique aqui para baixar o link do arquivo mp3</a></p>
+    </audio>
+    <!--MP3 WAV OGG tipos de audio-->
+</body>
+</html>
