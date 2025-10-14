@@ -56,26 +56,30 @@
 
     /* ---- parallax ---- */
     .parallax {
+      position: relative;
+      width: 100%;
+      height: 100vh;
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
-      color: white;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
       display: flex;
       align-items: center;
       justify-content: center;
+      color: white;
       font-size: 4em;
       font-weight: 600;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
     }
 
+    /* ---- imagens ---- */
     .foto1 {
-      background-image: url('./fotos/foto\ 4.jpg'); /* "Eu" */
+      background-image: url('./fotos/foto 4.jpg');
     }
     .foto2 {
-      background-image: url('./fotos/foto\ 3.jpg'); /* "Te" */
+      background-image: url('./fotos/foto 3.jpg');
     }
     .foto3 {
-      background-image: url('./fotos/foto\ 2.jpg'); /* "Amo" */
+      background-image: url('./fotos/foto 2.jpg');
     }
 
     footer {
@@ -86,12 +90,23 @@
       color: #777;
     }
 
+    /* ---- responsividade ---- */
     @media (max-width: 768px) {
       h1 {
-        font-size: 2.2em;
+        font-size: 2em;
       }
+
+      .texto {
+        padding: 25px;
+      }
+
       .parallax {
         font-size: 2.5em;
+        background-attachment: scroll; /* melhora desempenho no celular */
+      }
+
+      p {
+        font-size: 1em;
       }
     }
   </style>
